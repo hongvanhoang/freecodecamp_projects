@@ -1,0 +1,10 @@
+.main{
+  display:flex
+}
+#editor, #preview{
+  padding:20px;
+  margin:10px;
+  border-radius:10px;
+  background-color:#D3D3D3;
+  width: 50%;
+}
