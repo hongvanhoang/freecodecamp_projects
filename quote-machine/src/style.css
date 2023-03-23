@@ -1,0 +1,49 @@
+:root{
+	--text-color:rgb(92, 64, 51);
+	--new-quote-color:blue;
+	--tweet-color:#1DA1F2;
+}
+
+body{
+	background:linear-gradient(45deg,white,var(--text-color));
+	color:var(--text-color);
+	font-family:"Cursive", sans-serif;
+	font-weight:600;
+	justify-content:center;
+	align-items:center
+}
+
+#quote-box{
+	width:700px;
+	background-color:white;
+	position:relative;
+	padding: 50px 70px;
+	height:auto;
+	justify-content:center;
+	align-items:center;	
+	margin:auto;
+	text-align:center;
+	display:table;
+	box-shadow:10px 10px 5px black;
+	border-radius:5px;
+	font-size:22px;
+}
+
+button {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius:3px;
+  margin:0 50px;
+}
+
+#new-quote{
+	background-color:var(--new-quote-color);
+}
+#twitter{
+	background-color:var(--tweet-color);
+}

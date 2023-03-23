@@ -1,0 +1,18 @@
+<script>
+       		$(document).ready(function() {
+       			$.fn.center= function(){
+       				this.css('position', 'absolute');
+       				this.css("top", ( $(window).height() - this.outerHeight() ) / 2  + "px");
+       				this.css("left", ( $(window).width() - this.outerWidth() ) / 2 + "px");
+       				return this;
+       			}
+       			$("#quote-box").center();
+       		})
+       </script>
+<div id="quote-box">
+  <p id="text"></p>
+  <p id="author"></p>
+  <button id="new-quote">New Quote!</button>
+  <a class="twitter-share-button" id="tweet-quote" data-size="large" href="https://twitter.com/intent/tweet?text=quote"><button id="twitter">
+Tweet</button></a>
+</div>
