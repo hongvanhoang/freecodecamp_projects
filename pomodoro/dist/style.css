@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: center;
+  background-image: url(https://gallery.sailorsoapbox.com/albums/wallpapers/desktop/Sailor_Pluto_-_Time_Warp.png);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+/* loading element */
+.preloader {
+  z-index: 999;
+  position: absolute;
+  border-radius: 20px;
+  visibility: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+/* hide loading element when page finishes loading */
+.hide-preloader {
+  z-index: -999;
+  visibility: hidden;
+}
+#time-left {
+  text-align: center;
+  display: flex;
+  font-size: 100px;
+  color: white;
+  text-shadow: 8px 8px 10px black;
+  align-items: center;
+  justify-content: center;
+}
+#timer-label {
+  text-align: center;
+  display: flex;
+  font-size: xx-large;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 4px 4px 5px black;
+  margin-bottom: 20px;
+}
+
+h4 {
+  text-shadow: 4px 4px 5px black;
+}
+h4 > span {
+  text-shadow: none;
+}
+#start_stop {
+  display: grid;
+}
+.pause-btn,
+.play-btn {
+  grid-column: 1;
+  grid-row: 1;
+}
+h4 {
+  color: white;
+  text-shadow: 3px 3px 4px black;
+}
+.timer-settings {
+  padding-bottom: 10px;
+}
+#session-length,
+#break-length {
+  font-size: x-large;
+}
+/* show element */
+.show-element {
+  opacity: 1;
+  visibility: visible;
+}
+/* hide element */
+.hide-element {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
